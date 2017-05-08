@@ -2,7 +2,7 @@
 
 > This repo contains a simple example to show how NSNotificationCentre works
 
-## Steps:
+### Steps:
 1. Clone the repo
 2. Run the app
 3. Visit AboutUs & Details screen (you see the screen's are "waiting for notification")
