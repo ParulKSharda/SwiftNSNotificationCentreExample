@@ -1,26 +1,161 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sg0-N1-jfQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--DetailsPage-->
+        <scene sceneID="nWd-Lw-0aM">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Dd5-nt-6TB" customClass="DetailsPageViewController" customModule="NSNotificationTesting" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="NW7-FX-cFn"/>
+                        <viewControllerLayoutGuide type="bottom" id="tcg-Ex-2Ny"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="IlQ-Z0-urA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am also waiting for the conversation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLt-U3-5pF">
+                                <rect key="frame" x="37.5" y="318.5" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="C9F-ey-EXx"/>
+                                    <constraint firstAttribute="width" constant="300" id="ZG7-VT-JSN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JLt-U3-5pF" firstAttribute="centerX" secondItem="IlQ-Z0-urA" secondAttribute="centerX" id="2q7-oi-Lgm"/>
+                            <constraint firstItem="JLt-U3-5pF" firstAttribute="centerY" secondItem="IlQ-Z0-urA" secondAttribute="centerY" id="ZLG-aO-ZWm"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="DetailsPage" id="CEb-OT-dgf"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="JLt-U3-5pF" id="Gu7-04-f6o"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KgE-GC-WGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1063" y="797"/>
+        </scene>
+        <!--AboutPage-->
+        <scene sceneID="vdM-fZ-K4P">
+            <objects>
+                <viewController title="AboutPage" id="zJ9-QE-rlD" customClass="AboutUsViewController" customModule="NSNotificationTesting" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d6g-K8-a7P"/>
+                        <viewControllerLayoutGuide type="bottom" id="3JU-KZ-4AZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oFn-FD-0fS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am waiting for notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa8-49-pgN">
+                                <rect key="frame" x="38" y="318.5" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="B9S-Ra-8Mi"/>
+                                    <constraint firstAttribute="height" constant="30" id="VTq-dt-N9m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wa8-49-pgN" firstAttribute="centerY" secondItem="oFn-FD-0fS" secondAttribute="centerY" id="Bfq-H3-kfh"/>
+                            <constraint firstItem="Wa8-49-pgN" firstAttribute="centerX" secondItem="oFn-FD-0fS" secondAttribute="centerX" id="dC1-jf-Mau"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About Us" id="uaJ-bu-4fl"/>
+                    <connections>
+                        <outlet property="message" destination="Wa8-49-pgN" id="CHF-hj-e0v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qc6-4Q-cMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="797"/>
+        </scene>
+        <!--HomePage-->
+        <scene sceneID="D6F-c5-6XB">
+            <objects>
+                <viewController title="HomePage" id="ulF-0c-GbV" customClass="HomePageViewController" customModule="NSNotificationTesting" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uJV-jm-EMT"/>
+                        <viewControllerLayoutGuide type="bottom" id="xnv-Md-A3x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Yd-OT-Msk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-TN-hPG">
+                                <rect key="frame" x="70" y="319" width="235" height="30"/>
+                                <state key="normal" title="Click here! To notify other screens">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="notifyButtonClicked:" destination="ulF-0c-GbV" eventType="touchUpInside" id="Hz5-3s-uVe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Once done i will inform you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIu-hp-4Fw">
+                                <rect key="frame" x="37" y="418" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="E3I-lM-m0R"/>
+                                    <constraint firstAttribute="width" constant="300" id="pHq-1b-0A5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0oc-TN-hPG" firstAttribute="centerY" secondItem="0Yd-OT-Msk" secondAttribute="centerY" id="6jU-1w-rRG"/>
+                            <constraint firstItem="mIu-hp-4Fw" firstAttribute="centerX" secondItem="0oc-TN-hPG" secondAttribute="centerX" id="7Ay-5N-jOe"/>
+                            <constraint firstItem="mIu-hp-4Fw" firstAttribute="top" secondItem="0oc-TN-hPG" secondAttribute="bottom" constant="69" id="MLW-Wa-Ade"/>
+                            <constraint firstItem="0oc-TN-hPG" firstAttribute="centerX" secondItem="0Yd-OT-Msk" secondAttribute="centerX" id="z9B-RN-5Yz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="LeF-b6-gk7"/>
+                    <connections>
+                        <outlet property="acknowledgementLabel" destination="mIu-hp-4Fw" id="QKE-ZE-dv2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6r-Lq-cuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-538" y="798"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qzI-xd-Rdz">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sg0-N1-jfQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Rm8-lB-EEJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ulF-0c-GbV" kind="relationship" relationship="viewControllers" id="a6J-O1-3j4"/>
+                        <segue destination="zJ9-QE-rlD" kind="relationship" relationship="viewControllers" id="9CQ-gU-hll"/>
+                        <segue destination="Dd5-nt-6TB" kind="relationship" relationship="viewControllers" id="ckU-Fc-W4Z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ja5-Xj-2kY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="472.80000000000001" y="-101.19940029985008"/>
         </scene>
     </scenes>
 </document>
