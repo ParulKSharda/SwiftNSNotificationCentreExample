@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148F26231EC0D65E00D87AEF /* DetailsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148F26221EC0D65E00D87AEF /* DetailsPageViewController.swift */; };
 		14A621891EBFAB2D00A3F3ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A621881EBFAB2D00A3F3ED /* AppDelegate.swift */; };
-		14A6218B1EBFAB2D00A3F3ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6218A1EBFAB2D00A3F3ED /* ViewController.swift */; };
 		14A6218E1EBFAB2D00A3F3ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A6218C1EBFAB2D00A3F3ED /* Main.storyboard */; };
 		14A621901EBFAB2D00A3F3ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A6218F1EBFAB2D00A3F3ED /* Assets.xcassets */; };
 		14A621931EBFAB2D00A3F3ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A621911EBFAB2D00A3F3ED /* LaunchScreen.storyboard */; };
 		14A6219E1EBFAB2D00A3F3ED /* NSNotificationTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6219D1EBFAB2D00A3F3ED /* NSNotificationTestingTests.swift */; };
 		14A621A91EBFAB2D00A3F3ED /* NSNotificationTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A621A81EBFAB2D00A3F3ED /* NSNotificationTestingUITests.swift */; };
+		14A621B71EBFBA6100A3F3ED /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A621B61EBFBA6100A3F3ED /* AboutUsViewController.swift */; };
+		14A621B91EC0A4D600A3F3ED /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A621B81EC0A4D600A3F3ED /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		148F26221EC0D65E00D87AEF /* DetailsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPageViewController.swift; sourceTree = "<group>"; };
 		14A621851EBFAB2D00A3F3ED /* NSNotificationTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSNotificationTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A621881EBFAB2D00A3F3ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14A6218A1EBFAB2D00A3F3ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14A6218D1EBFAB2D00A3F3ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14A6218F1EBFAB2D00A3F3ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14A621921EBFAB2D00A3F3ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		14A621A41EBFAB2D00A3F3ED /* NSNotificationTestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSNotificationTestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A621A81EBFAB2D00A3F3ED /* NSNotificationTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationTestingUITests.swift; sourceTree = "<group>"; };
 		14A621AA1EBFAB2D00A3F3ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14A621B61EBFBA6100A3F3ED /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		14A621B81EC0A4D600A3F3ED /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				14A621881EBFAB2D00A3F3ED /* AppDelegate.swift */,
-				14A6218A1EBFAB2D00A3F3ED /* ViewController.swift */,
 				14A6218C1EBFAB2D00A3F3ED /* Main.storyboard */,
 				14A6218F1EBFAB2D00A3F3ED /* Assets.xcassets */,
 				14A621911EBFAB2D00A3F3ED /* LaunchScreen.storyboard */,
 				14A621941EBFAB2D00A3F3ED /* Info.plist */,
+				14A621B61EBFBA6100A3F3ED /* AboutUsViewController.swift */,
+				14A621B81EC0A4D600A3F3ED /* HomePageViewController.swift */,
+				148F26221EC0D65E00D87AEF /* DetailsPageViewController.swift */,
 			);
 			path = NSNotificationTesting;
 			sourceTree = "<group>";
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14A6218B1EBFAB2D00A3F3ED /* ViewController.swift in Sources */,
+				148F26231EC0D65E00D87AEF /* DetailsPageViewController.swift in Sources */,
+				14A621B71EBFBA6100A3F3ED /* AboutUsViewController.swift in Sources */,
 				14A621891EBFAB2D00A3F3ED /* AppDelegate.swift in Sources */,
+				14A621B91EC0A4D600A3F3ED /* HomePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +520,7 @@
 				14A621AF1EBFAB2D00A3F3ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14A621B01EBFAB2D00A3F3ED /* Build configuration list for PBXNativeTarget "NSNotificationTestingTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +529,7 @@
 				14A621B21EBFAB2D00A3F3ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14A621B31EBFAB2D00A3F3ED /* Build configuration list for PBXNativeTarget "NSNotificationTestingUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +538,7 @@
 				14A621B51EBFAB2D00A3F3ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
